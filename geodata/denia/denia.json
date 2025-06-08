@@ -1,7 +1,10 @@
 {
   "pueblo": "Denia",
+  "autor": "oleg0307",
+  "fecha_creacion": "2025-06-08",
   "puntos": [
     {
+      "id": 1,
       "titulo": "Castillo de Denia",
       "descripcion": "Fortaleza histórica con vistas al puerto",
       "coordenadas": [38.8403, 0.1124],
