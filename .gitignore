@@ -1,0 +1,14 @@
+node_modules/
+web-movil/
+*.html
+*.js
+*.css
+*.zip
+*.exe
+*.log
+*.lock
+.idea/
+.vscode/
+index*
+renderer*
+package*
