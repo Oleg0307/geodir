@@ -1,0 +1,18 @@
+{
+  "titulo": "Molinos de la Plana",
+  "descripcion": "Conjunto de antiguos molinos de viento sobre la colina.",
+  "coordenadas": [
+    38.8046665402407,
+    0.17071897115884305
+  ],
+  "pregunta": {
+    "enunciado": "¿Qué lugar es este?",
+    "respuestas": [
+      "Molinos de la Plana",
+      "Opción falsa A",
+      "Opción falsa B",
+      "Opción falsa C"
+    ],
+    "correcta": 1
+  }
+}
