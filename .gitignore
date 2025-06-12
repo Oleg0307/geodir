@@ -1,0 +1,16 @@
+/*
+
+!/.gitignore
+!/package.json
+
+!/docs/
+!/docs/**
+!/geodata/
+!/geodata/*/
+!/geodata/*/*.json
+
+geodata/*/punto_*.json
+node_modules/
+.idea/
+.vscode/
+*.log

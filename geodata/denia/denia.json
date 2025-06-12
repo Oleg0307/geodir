@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "дения",
+    "descripcion": "Порт",
+    "coordenadas": [
+      38.834488116053365,
+      0.11510585633872862
+    ],
+    "pregunta": {
+      "enunciado": "¿Qué lugar es este?",
+      "respuestas": [
+        "дения",
+        "Opción falsa A",
+        "Opción falsa B",
+        "Opción falsa C"
+      ],
+      "correcta": 1
+    }
+  },
+  {
+    "titulo": "port",
+    "descripcion": "port",
+    "coordenadas": [
+      38.83101262695657,
+      0.12085515630475555
+    ],
+    "pregunta": {
+      "enunciado": "que transporte util?",
+      "respuestas": [
+        "coche",
+        "moto",
+        "barco",
+        "pie"
+      ],
+      "correcta": 3
+    }
+  }
+]
