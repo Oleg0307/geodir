@@ -7,6 +7,47 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
+// Línea 9 — INICIO DE BLOQUE "Centrarme"
+let ubicacionUsuario = null;
+
+document.getElementById('centrarme').addEventListener('click', () => {
+  if (!navigator.geolocation) {
+    alert('Geolocalización no soportada por este navegador.');
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      const { latitude, longitude } = pos.coords;
+
+      if (!ubicacionUsuario) {
+        ubicacionUsuario = L.marker([latitude, longitude], {
+          title: "Tu ubicación",
+          icon: L.icon({
+            iconUrl: "https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png",
+            iconSize: [24, 24],
+            iconAnchor: [12, 12],
+            popupAnchor: [1, -34]
+          })
+        }).addTo(map).bindPopup("Estás aquí");
+      } else {
+        ubicacionUsuario.setLatLng([latitude, longitude]);
+      }
+
+      map.setView([latitude, longitude], 15);
+      ubicacionUsuario.openPopup();
+    },
+    () => {
+      alert('No se pudo obtener tu ubicación.');
+    }
+  );
+});
+// Línea 37 — FIN DE BLOQUE "Centrarme"
+
+
+
+
+
 //  Función para cargar marcadores desde un JSON
 function cargarMapa(data) {
   // Eliminar marcadores previos si existen

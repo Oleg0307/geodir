@@ -1,31 +1,13 @@
 [
   {
-    "titulo": "дения",
-    "descripcion": "Порт",
+    "titulo": "purto",
+    "descripcion": "puerto",
     "coordenadas": [
-      38.834488116053365,
-      0.11510585633872862
+      38.844650149779234,
+      0.11175209448861524
     ],
     "pregunta": {
-      "enunciado": "¿Qué lugar es este?",
-      "respuestas": [
-        "дения",
-        "Opción falsa A",
-        "Opción falsa B",
-        "Opción falsa C"
-      ],
-      "correcta": 1
-    }
-  },
-  {
-    "titulo": "port",
-    "descripcion": "port",
-    "coordenadas": [
-      38.83101262695657,
-      0.12085515630475555
-    ],
-    "pregunta": {
-      "enunciado": "que transporte util?",
+      "enunciado": "transporte??",
       "respuestas": [
         "coche",
         "moto",
@@ -33,6 +15,24 @@
         "pie"
       ],
       "correcta": 3
+    }
+  },
+  {
+    "titulo": "Castillo",
+    "descripcion": "antiguo",
+    "coordenadas": [
+      38.84257949488548,
+      0.10763216553769886
+    ],
+    "pregunta": {
+      "enunciado": "Altura?",
+      "respuestas": [
+        "20m",
+        "50m",
+        "60m",
+        "80m"
+      ],
+      "correcta": 4
     }
   }
 ]

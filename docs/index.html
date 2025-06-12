@@ -16,15 +16,17 @@
 </head>
 <body>
 
-  <div class="container-fluid p-3">
-    <div class="mb-3">
-      <label for="pueblo-select" class="form-label">Elige un pueblo:</label>
-      <select id="pueblo-select" class="form-select">
-        <option value="">-- Selecciona --</option>
-        <option value="javea">Jávea</option>
-        <option value="denia">Denia</option>
-      </select>
-    </div>
+  <div class="mb-3 d-flex align-items-end gap-2">
+  <div class="flex-grow-1">
+    <label for="pueblo-select" class="form-label">Elige un pueblo:</label>
+    <select id="pueblo-select" class="form-select">
+      <option value="">-- Selecciona --</option>
+      <option value="javea">Jávea</option>
+      <option value="denia">Denia</option>
+    </select>
+  </div>
+  <button id="centrarme" class="btn btn-outline-primary">Centrarme</button>
+</div>
 
     <div id="map" style="height: 400px;"></div>
   </div>
