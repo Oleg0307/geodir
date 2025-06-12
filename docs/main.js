@@ -112,7 +112,7 @@ if ("geolocation" in navigator) {
     const userMarker = L.marker([latitude, longitude], {
       title: "Tu ubicación",
       icon: L.icon({
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+        iconUrl: "	https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png",
         iconSize: [25, 41],
       })
     }).addTo(map);
