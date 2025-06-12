@@ -51,3 +51,29 @@ document.getElementById('pueblo-select').addEventListener('change', async (e) =>
     alert("No se pudo cargar el pueblo seleccionado.");
   }
 });
+
+
+// Mostrar la ubicación del usuario si está disponible
+if ("geolocation" in navigator) {
+  navigator.geolocation.getCurrentPosition((position) => {
+    const { latitude, longitude } = position.coords;
+
+    const userMarker = L.marker([latitude, longitude], {
+      title: "Tu ubicación",
+      icon: L.icon({
+        iconUrl: "https://cdn-icons-png.flaticon.com/512/64/64113.png",
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34]
+      })
+    }).addTo(map);
+
+    userMarker.bindPopup("Estás aquí").openPopup();
+    // Opcional: centrar mapa en el usuario
+    // map.setView([latitude, longitude], 14);
+  }, (error) => {
+    console.warn("No se pudo obtener ubicación del usuario:", error.message);
+  });
+} else {
+  console.warn("Geolocalización no disponible en este navegador.");
+}
