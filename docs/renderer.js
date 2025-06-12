@@ -36,7 +36,10 @@ export function abrirPopup(punto, marker, userCoords) {
 
   html += `</div>`;
 
-  marker.bindPopup(html).openPopup();
+	marker.closePopup();       // Закрыть открытый попап (если есть)
+	marker.unbindPopup();      // Удалить ранее привязанный pop-up
+	marker.bindPopup(html).openPopup();  // Привязать и открыть заново
+
 
   // Agregar eventos solo si está dentro del rango
   if (dentroRadio && pregunta) {
