@@ -106,6 +106,9 @@ if ("geolocation" in navigator) {
   navigator.geolocation.getCurrentPosition((position) => {
     const { latitude, longitude } = position.coords;
 
+    //  Сохраняем в глобальную переменную
+    window.userCoords = [latitude, longitude];
+
     const userMarker = L.marker([latitude, longitude], {
       title: "Tu ubicación",
       icon: L.icon({
@@ -117,11 +120,8 @@ if ("geolocation" in navigator) {
     }).addTo(map);
 
     userMarker.bindPopup("Estás aquí").openPopup();
-    // Opcional: centrar mapa en el usuario
-    // map.setView([latitude, longitude], 14);
   }, (error) => {
     console.warn("No se pudo obtener ubicación del usuario:", error.message);
   });
-} else {
-  console.warn("Geolocalización no disponible en este navegador.");
 }
+
