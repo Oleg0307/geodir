@@ -56,11 +56,12 @@ function cargarMapa(data) {
   }
   window.markers = [];
 
-  data.forEach(punto => {
-    const marker = L.marker(punto.coordenadas).addTo(map);
-    marker.on('click', () => abrirPopup(punto, marker));
-    window.markers.push(marker);
-  });
+data.forEach(punto => {
+  const marker = L.marker(punto.coordenadas).addTo(map);
+  marker.on('click', () => abrirPopup(punto, marker, ubicacionUsuario?.getLatLng?.()));
+  window.markers.push(marker);
+});
+
 
   if (data.length > 0) {
     map.setView(data[0].coordenadas, 15); // Centrar en el primer punto
