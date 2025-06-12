@@ -24,10 +24,10 @@ document.getElementById('centrarme').addEventListener('click', () => {
         ubicacionUsuario = L.marker([latitude, longitude], {
           title: "Tu ubicación",
           icon: L.icon({
-            iconUrl: "https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png",
-            iconSize: [24, 24],
-            iconAnchor: [12, 12],
-            popupAnchor: [1, -34]
+	iconUrl: "https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png",
+	iconSize: [24, 24],
+	iconAnchor: [12, 12],
+	popupAnchor: [0, -10]
           })
         }).addTo(map).bindPopup("Estás aquí");
       } else {
