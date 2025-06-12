@@ -1,0 +1,18 @@
+{
+  "titulo": "Mirador Cabo de San Antonio",
+  "descripcion": "Vistas panorámicas al mar Mediterráneo y al puerto.",
+  "coordenadas": [
+    38.803521,
+    0.189765
+  ],
+  "pregunta": {
+    "enunciado": "¿Qué lugar es este?",
+    "respuestas": [
+      "Mirador Cabo de San Antonio",
+      "Opción falsa A",
+      "Opción falsa B",
+      "Opción falsa C"
+    ],
+    "correcta": 1
+  }
+}

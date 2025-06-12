@@ -1,0 +1,18 @@
+{
+  "titulo": "nuevo",
+  "descripcion": "nuevo",
+  "coordenadas": [
+    38.792560568686156,
+    0.1628187379052948
+  ],
+  "pregunta": {
+    "enunciado": "¿Qué lugar es este?",
+    "respuestas": [
+      "nuevo",
+      "Opción falsa A",
+      "Opción falsa B",
+      "Opción falsa C"
+    ],
+    "correcta": 1
+  }
+}

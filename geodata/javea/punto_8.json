@@ -1,0 +1,18 @@
+{
+  "titulo": "riu Gorgos",
+  "descripcion": "rio",
+  "coordenadas": [
+    38.78898075635666,
+    0.17734581538133123
+  ],
+  "pregunta": {
+    "enunciado": "¿Puedes caminar a lo largo del lecho del río?",
+    "respuestas": [
+      "Si",
+      "NO",
+      "solo en inverno",
+      "con amigos si"
+    ],
+    "correcta": 1
+  }
+}

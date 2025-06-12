@@ -1,0 +1,18 @@
+{
+  "titulo": "Prueba1",
+  "descripcion": "prueba",
+  "coordenadas": [
+    38.74802996716851,
+    0.20281160346767638
+  ],
+  "pregunta": {
+    "enunciado": "Que calle es?",
+    "respuestas": [
+      "Mirlos",
+      "Patos",
+      "PAZ",
+      "SIN NOMBRE"
+    ],
+    "correcta": 1
+  }
+}

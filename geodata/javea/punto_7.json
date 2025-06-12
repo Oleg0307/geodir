@@ -1,0 +1,18 @@
+{
+  "titulo": "Rotonda",
+  "descripcion": "cruze redondo",
+  "coordenadas": [
+    38.788445659020155,
+    0.17899754326152098
+  ],
+  "pregunta": {
+    "enunciado": "Cuanto calles cruzen?",
+    "respuestas": [
+      "Ni una",
+      "una",
+      "dos",
+      "tres"
+    ],
+    "correcta": 3
+  }
+}

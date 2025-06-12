@@ -1,0 +1,18 @@
+{
+  "titulo": "purto",
+  "descripcion": "puerto",
+  "coordenadas": [
+    38.844650149779234,
+    0.11175209448861524
+  ],
+  "pregunta": {
+    "enunciado": "transporte??",
+    "respuestas": [
+      "coche",
+      "moto",
+      "barco",
+      "pie"
+    ],
+    "correcta": 3
+  }
+}

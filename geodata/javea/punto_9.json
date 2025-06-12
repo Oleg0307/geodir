@@ -1,0 +1,18 @@
+{
+  "titulo": "Vista al Mongo",
+  "descripcion": "vista",
+  "coordenadas": [
+    38.7882533574338,
+    0.17747452144993403
+  ],
+  "pregunta": {
+    "enunciado": "Que punto mas alto puedes ver?",
+    "respuestas": [
+      "300m",
+      "400m",
+      "600m",
+      "750m"
+    ],
+    "correcta": 4
+  }
+}

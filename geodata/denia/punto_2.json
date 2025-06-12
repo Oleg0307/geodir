@@ -1,0 +1,18 @@
+{
+  "titulo": "Castillo",
+  "descripcion": "antiguo",
+  "coordenadas": [
+    38.84257949488548,
+    0.10763216553769886
+  ],
+  "pregunta": {
+    "enunciado": "Altura?",
+    "respuestas": [
+      "20m",
+      "50m",
+      "60m",
+      "80m"
+    ],
+    "correcta": 4
+  }
+}
