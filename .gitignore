@@ -1,14 +1,27 @@
+# ─ Игнорируем всё на верхнем уровне ───────
+/*
+
+# ─── Разрешаем (не игнорируем) эти папки и их содержимое ───
+!/geodata/
+!/geodata/**
+
+!/web-movil/
+!/web-movil/**
+
+# ─── Чтобы сам .gitignore тоже попал в репо ───
+!/.gitignore
+
+# ─── Дополнительные игнор-паттерны ───
+# (не будут влиять на geodata/ и web-movil/)
 node_modules/
-web-movil/
-*.html
-*.js
-*.css
 *.zip
 *.exe
 *.log
 *.lock
+
+# IDE и служебные папки
 .idea/
 .vscode/
-index*
-renderer*
-package*
+
+# Ваши временные проекты
+saved_projects/

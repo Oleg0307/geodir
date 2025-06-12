@@ -1,0 +1,18 @@
+{
+  "titulo": "пми ыпи",
+  "descripcion": "ыми м",
+  "coordenadas": [
+    38.78112616926284,
+    0.17353569391540094
+  ],
+  "pregunta": {
+    "enunciado": "¿Qué lugar es este?",
+    "respuestas": [
+      "пми ыпи",
+      "Opción falsa A",
+      "Opción falsa B",
+      "Opción falsa C"
+    ],
+    "correcta": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "titulo": "Iglesia de San Bartolomé",
+  "descripcion": "Templo gótico-fortaleza en el centro histórico.",
+  "coordenadas": [
+    38.79135678534803,
+    0.16736941624524884
+  ],
+  "pregunta": {
+    "enunciado": "¿Qué lugar es este?",
+    "respuestas": [
+      "Iglesia de San Bartolomé",
+      "Opción falsa A",
+      "Opción falsa B",
+      "Opción falsa C"
+    ],
+    "correcta": 1
+  }
+}
