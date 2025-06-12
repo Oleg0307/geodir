@@ -5,6 +5,8 @@
   "main": "app/main.js",
   "scripts": {
     "start": "electron ."
+	"generate-manifests": "node scripts/generate-manifests.js",
+
   },
   "author": "",
   "license": "ISC",
