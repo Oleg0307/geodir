@@ -6,7 +6,7 @@ document.getElementById('pueblo-select').addEventListener('change', async (e) =>
 
   try {
     // Construye la URL del archivo JSON del pueblo desde GitHub
-    const manifestUrl =`https://raw.githubusercontent.com/Oleg0307/geodir/main/geodata/${pueblo}/index.json`;
+    const manifestUrl = `https://raw.githubusercontent.com/Oleg0307/geodir/main/geodata/${pueblo}/${pueblo}.json`;
 
     // Realiza la petición HTTP asincrónica usando Fetch API
     const response = await fetch(manifestUrl);
