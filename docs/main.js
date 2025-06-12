@@ -9,7 +9,7 @@ document.getElementById('pueblo-select').addEventListener('change', async (e) =>
     const manifestUrl =`https://raw.githubusercontent.com/Oleg0307/geodir/main/geodata/${pueblo}/index.json`;
 
     // Realiza la petición HTTP asincrónica usando Fetch API
-    const response = await fetch(url);
+    const response = await fetch(manifestUrl);
 
     // Si la respuesta HTTP no es satisfactoria, lanza un error
     if (!response.ok) throw new Error('No se pudo obtener el archivo JSON');
