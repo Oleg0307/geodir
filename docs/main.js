@@ -1,30 +1,53 @@
-// Añade un escuchador al selector que se activa al cambiar de opción
-document.getElementById('pueblo-select').addEventListener('change', async (e) => {
-  const pueblo = e.target.value; // Obtiene el nombre del pueblo seleccionado
+//  Importar función abrirPopup desde renderer.js
+import { abrirPopup } from './renderer.js';
 
-  if (!pueblo) return; // Si no se seleccionó un valor, finaliza la función
+//  Crear el mapa Leaflet centrado en Jávea
+const map = L.map('map').setView([38.7895, 0.1669], 14);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+//  Función para cargar marcadores desde un JSON
+function cargarMapa(data) {
+  // Eliminar marcadores previos si existen
+  if (window.markers) {
+    window.markers.forEach(m => map.removeLayer(m));
+  }
+  window.markers = [];
+
+  data.forEach(punto => {
+    const marker = L.marker(punto.coordenadas).addTo(map);
+    marker.on('click', () => abrirPopup(punto, marker));
+    window.markers.push(marker);
+  });
+
+  if (data.length > 0) {
+    map.setView(data[0].coordenadas, 15); // Centrar en el primer punto
+  }
+}
+
+//  Escuchador para seleccionar el pueblo desde el desplegable
+document.getElementById('pueblo-select').addEventListener('change', async (e) => {
+  const pueblo = e.target.value;
+
+  if (!pueblo) return;
 
   try {
-    // Construye la URL del archivo JSON del pueblo desde GitHub
+    // Construir URL del archivo JSON en GitHub
     const manifestUrl = `https://raw.githubusercontent.com/Oleg0307/geodir/main/geodata/${pueblo}/${pueblo}.json`;
 
-    // Realiza la petición HTTP asincrónica usando Fetch API
+    // Obtener el archivo JSON
     const response = await fetch(manifestUrl);
 
-    // Si la respuesta HTTP no es satisfactoria, lanza un error
     if (!response.ok) throw new Error('No se pudo obtener el archivo JSON');
 
-    // Convierte el contenido de la respuesta a objeto JavaScript
     const data = await response.json();
 
-    // Llama a una función definida en otro archivo (por implementar) para mostrar el mapa
+    // Mostrar puntos en el mapa
     cargarMapa(data);
 
   } catch (error) {
-    // Muestra un error en la consola para depuración
     console.error("Error:", error);
-
-    // Informa al usuario sobre el fallo en la carga
     alert("No se pudo cargar el pueblo seleccionado.");
   }
 });
