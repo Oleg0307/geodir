@@ -114,8 +114,6 @@ if ("geolocation" in navigator) {
       icon: L.icon({
         iconUrl: "https://cdn-icons-png.flaticon.com/512/64/64113.png",
         iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34]
       })
     }).addTo(map);
 
