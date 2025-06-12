@@ -1,4 +1,6 @@
 .git/
 app/
+docs/
+geodata/**/punto_*.json
 node_modules/
 plantillas/
