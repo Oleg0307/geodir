@@ -9,7 +9,7 @@ export function abrirPopup(punto, marker, userCoords) {
   // Calcular distancia si hay coordenadas del usuario
   let dentroRadio = false;
   if (userCoords) {
-    const distancia = map.distance(userCoords, marker.getLatLng());
+    const distancia = calcularDistancia(userCoords, punto.coordenadas);
     dentroRadio = distancia <= 300;
   }
 
@@ -65,4 +65,18 @@ export function validarRespuesta(idxCorrecto, idxElegido, btnEl) {
       correctoBtn.classList.replace('btn-outline-primary','btn-success');
     }
   }
+}
+
+function calcularDistancia(coord1, coord2) {
+  const R = 6371000; // Радиус Земли в метрах
+  const rad = Math.PI / 180;
+  const lat1 = coord1[0] * rad;
+  const lat2 = coord2[0] * rad;
+  const dLat = (coord2[0] - coord1[0]) * rad;
+  const dLon = (coord2[1] - coord1[1]) * rad;
+
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon/2)**2;
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+  return R * c;
 }

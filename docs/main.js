@@ -58,7 +58,13 @@ function cargarMapa(data) {
 
 data.forEach(punto => {
   const marker = L.marker(punto.coordenadas).addTo(map);
-  marker.on('click', () => abrirPopup(punto, marker, ubicacionUsuario?.getLatLng?.()));
+  marker.on('click', () => {
+  if (window.userCoords) {
+    abrirPopup(punto, marker, window.userCoords);
+  } else {
+    abrirPopup(punto, marker, null);
+  }
+});
   window.markers.push(marker);
 });
 
