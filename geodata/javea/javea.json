@@ -18,150 +18,6 @@
     }
   },
   {
-    "titulo": "Mirador Cabo de San Antonio",
-    "descripcion": "Vistas panorámicas al mar Mediterráneo y al puerto.",
-    "coordenadas": [
-      38.803521,
-      0.189765
-    ],
-    "pregunta": {
-      "enunciado": "¿Qué lugar es este?",
-      "respuestas": [
-        "Mirador Cabo de San Antonio",
-        "Opción falsa A",
-        "Opción falsa B",
-        "Opción falsa C"
-      ],
-      "correcta": 1
-    }
-  },
-  {
-    "titulo": "Iglesia de San Bartolomé",
-    "descripcion": "Templo gótico-fortaleza en el centro histórico.",
-    "coordenadas": [
-      38.79135678534803,
-      0.16736941624524884
-    ],
-    "pregunta": {
-      "enunciado": "¿Qué lugar es este?",
-      "respuestas": [
-        "Iglesia de San Bartolomé",
-        "Opción falsa A",
-        "Opción falsa B",
-        "Opción falsa C"
-      ],
-      "correcta": 1
-    }
-  },
-  {
-    "titulo": "Puerto de Jávea",
-    "descripcion": "Zona portuaria con paseo marítimo y restaurantes.",
-    "coordenadas": [
-      38.79663981098071,
-      0.18359256200570329
-    ],
-    "pregunta": {
-      "enunciado": "¿Qué lugar es este?",
-      "respuestas": [
-        "Puerto de Jávea",
-        "Opción falsa A",
-        "Opción falsa B",
-        "Opción falsa C"
-      ],
-      "correcta": 1
-    }
-  },
-  {
-    "titulo": "Molinos de la Plana",
-    "descripcion": "Conjunto de antiguos molinos de viento sobre la colina.",
-    "coordenadas": [
-      38.8046665402407,
-      0.17071897115884305
-    ],
-    "pregunta": {
-      "enunciado": "¿Qué lugar es este?",
-      "respuestas": [
-        "Molinos de la Plana",
-        "Opción falsa A",
-        "Opción falsa B",
-        "Opción falsa C"
-      ],
-      "correcta": 1
-    }
-  },
-  {
-    "titulo": "пми ыпи",
-    "descripcion": "ыми м",
-    "coordenadas": [
-      38.78720668792464,
-      0.1678865850818845
-    ],
-    "pregunta": {
-      "enunciado": "¿Qué lugar es este?",
-      "respuestas": [
-        "пми ыпи",
-        "Opción falsa A",
-        "Opción falsa B",
-        "Opción falsa C"
-      ],
-      "correcta": 1
-    }
-  },
-  {
-    "titulo": "Rotonda",
-    "descripcion": "cruze redondo",
-    "coordenadas": [
-      38.788445659020155,
-      0.17899754326152098
-    ],
-    "pregunta": {
-      "enunciado": "Cuanto calles cruzen?",
-      "respuestas": [
-        "Ni una",
-        "una",
-        "dos",
-        "tres"
-      ],
-      "correcta": 3
-    }
-  },
-  {
-    "titulo": "riu Gorgos",
-    "descripcion": "rio",
-    "coordenadas": [
-      38.78898075635666,
-      0.17734581538133123
-    ],
-    "pregunta": {
-      "enunciado": "¿Puedes caminar a lo largo del lecho del río?",
-      "respuestas": [
-        "Si",
-        "NO",
-        "solo en inverno",
-        "con amigos si"
-      ],
-      "correcta": 1
-    }
-  },
-  {
-    "titulo": "Vista al Mongo",
-    "descripcion": "vista",
-    "coordenadas": [
-      38.7882533574338,
-      0.17747452144993403
-    ],
-    "pregunta": {
-      "enunciado": "Que punto mas alto puedes ver?",
-      "respuestas": [
-        "300m",
-        "400m",
-        "600m",
-        "750m"
-      ],
-      "correcta": 4
-    }
-  },
-  {
     "titulo": "Grava",
     "descripcion": "playa",
     "coordenadas": [
@@ -321,6 +177,168 @@
         "Opción falsa C"
       ],
       "correcta": 1
+    }
+  },
+  {
+    "titulo": "NUEVO",
+    "descripcion": "prueba",
+    "coordenadas": [
+      38.791222085302735,
+      0.1770901679992676
+    ],
+    "pregunta": {
+      "enunciado": "Que es esto?",
+      "respuestas": [
+        "Rotonda",
+        "Cruze",
+        "Calle",
+        "nada"
+      ],
+      "correcta": 1
+    }
+  },
+  {
+    "titulo": "Mirador Cabo de San Antonio",
+    "descripcion": "Vistas panorámicas al mar Mediterráneo y al puerto.",
+    "coordenadas": [
+      38.803521,
+      0.189765
+    ],
+    "pregunta": {
+      "enunciado": "¿Qué lugar es este?",
+      "respuestas": [
+        "Mirador Cabo de San Antonio",
+        "Opción falsa A",
+        "Opción falsa B",
+        "Opción falsa C"
+      ],
+      "correcta": 1
+    }
+  },
+  {
+    "titulo": "Iglesia de San Bartolomé",
+    "descripcion": "Templo gótico-fortaleza en el centro histórico.",
+    "coordenadas": [
+      38.79135678534803,
+      0.16736941624524884
+    ],
+    "pregunta": {
+      "enunciado": "¿Qué lugar es este?",
+      "respuestas": [
+        "Iglesia de San Bartolomé",
+        "Opción falsa A",
+        "Opción falsa B",
+        "Opción falsa C"
+      ],
+      "correcta": 1
+    }
+  },
+  {
+    "titulo": "Puerto de Jávea",
+    "descripcion": "Zona portuaria con paseo marítimo y restaurantes.",
+    "coordenadas": [
+      38.79663981098071,
+      0.18359256200570329
+    ],
+    "pregunta": {
+      "enunciado": "¿Qué lugar es este?",
+      "respuestas": [
+        "Puerto de Jávea",
+        "Opción falsa A",
+        "Opción falsa B",
+        "Opción falsa C"
+      ],
+      "correcta": 1
+    }
+  },
+  {
+    "titulo": "Molinos de la Plana",
+    "descripcion": "Conjunto de antiguos molinos de viento sobre la colina.",
+    "coordenadas": [
+      38.8046665402407,
+      0.17071897115884305
+    ],
+    "pregunta": {
+      "enunciado": "¿Qué lugar es este?",
+      "respuestas": [
+        "Molinos de la Plana",
+        "Opción falsa A",
+        "Opción falsa B",
+        "Opción falsa C"
+      ],
+      "correcta": 1
+    }
+  },
+  {
+    "titulo": "пми ыпи",
+    "descripcion": "ыми м",
+    "coordenadas": [
+      38.78720668792464,
+      0.1678865850818845
+    ],
+    "pregunta": {
+      "enunciado": "¿Qué lugar es este?",
+      "respuestas": [
+        "пми ыпи",
+        "Opción falsa A",
+        "Opción falsa B",
+        "Opción falsa C"
+      ],
+      "correcta": 1
+    }
+  },
+  {
+    "titulo": "Rotonda",
+    "descripcion": "cruze redondo",
+    "coordenadas": [
+      38.788445659020155,
+      0.17899754326152098
+    ],
+    "pregunta": {
+      "enunciado": "Cuanto calles cruzen?",
+      "respuestas": [
+        "Ni una",
+        "una",
+        "dos",
+        "tres"
+      ],
+      "correcta": 3
+    }
+  },
+  {
+    "titulo": "riu Gorgos",
+    "descripcion": "rio",
+    "coordenadas": [
+      38.78898075635666,
+      0.17734581538133123
+    ],
+    "pregunta": {
+      "enunciado": "¿Puedes caminar a lo largo del lecho del río?",
+      "respuestas": [
+        "Si",
+        "NO",
+        "solo en inverno",
+        "con amigos si"
+      ],
+      "correcta": 1
+    }
+  },
+  {
+    "titulo": "Vista al Mongo",
+    "descripcion": "vista",
+    "coordenadas": [
+      38.7882533574338,
+      0.17747452144993403
+    ],
+    "pregunta": {
+      "enunciado": "Que punto mas alto puedes ver?",
+      "respuestas": [
+        "300m",
+        "400m",
+        "600m",
+        "750m"
+      ],
+      "correcta": 4
     }
   }
 ]
